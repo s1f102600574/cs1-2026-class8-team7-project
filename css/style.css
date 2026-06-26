@@ -1,0 +1,49 @@
+body{
+    margin:0;
+}
+
+#header{
+    background-color: black;
+    color:white;
+}
+
+#slide{
+    width:100%;
+    height:10em;
+    margin-bottom: 10px;
+    border-bottom: solid .5px black;
+}
+
+#explanation{
+    width: 100%;
+    border-top: solid .5px black;
+    border-bottom: solid .5px black;
+}
+
+#links{
+    display:flex;
+}
+
+.links{
+    border: solid .5px black;
+    width:30%;
+}
+
+#link1{
+    margin-right:5%;
+    margin-top:10px;
+}
+
+#link2{
+    margin-right:5%;
+    margin-top:10px;
+}
+
+#link3{
+    margin-top:10px;
+}
+
+#back_to_top{
+    position: absolute;
+    bottom: 0;
+}
