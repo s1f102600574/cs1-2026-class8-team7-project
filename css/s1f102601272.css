@@ -1,0 +1,13 @@
+body{
+    margin:0;
+}
+
+#header{
+    display:flex;
+}
+
+.tabs{
+    padding:10px;
+    border:solid grey 1px;
+    width:25%;
+}
