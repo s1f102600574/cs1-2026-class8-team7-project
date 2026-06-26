@@ -1,3 +1,51 @@
-h1{
-    color: #ff0000;
+body{
+    margin:0;
 }
+
+#header{
+    display:flex;
+    position: fixed;
+    width: 100%;   
+    z-index: 9999; 
+    
+}
+
+.tabs{
+    padding:10px;
+    border:solid grey 1px;
+    width:25%;
+    background-color: #dfdada;
+}
+h1{
+   padding-top: 20%;
+   text-align:center; 
+}
+.intro{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+}
+
+#mood{
+    display:flex;
+
+}
+.SelectMood{
+    font-size: 15px;
+    padding: 7px;
+    border:solid grey 1px;
+    width:25%;
+    background-color: #dfdada;
+    transition-property: background-color;
+    transition-duration: 1s;
+
+
+}
+.SelectMood:hover{
+    font-size: 20px;
+    padding:7px;
+    border:solid rgb(154, 199, 223) 1px;
+    width:25%;
+    background-color: #27dff3;
+}
+
