@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin:0;
 }
@@ -43,7 +47,26 @@ body{
     margin-top:10px;
 }
 
-#back_to_top{
-    position: absolute;
-    bottom: 0;
+#page_top {
+    font-size: 13px;
+    writing-mode: vertical-rl;
+    padding: 10px 0 10px 4px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 102, 0);
+    border: solid 2px;
+    border-radius: 9999px;
+    transition: 0.3ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#page_top:hover {
+    background-color: rgba(255, 255, 255, 0.708);
+    color: rgb(255, 102, 0);
 }
