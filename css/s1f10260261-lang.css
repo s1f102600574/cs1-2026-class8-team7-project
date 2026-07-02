@@ -42,10 +42,71 @@ h1{
 
 }
 .SelectMood:hover{
-    font-size: 20px;
+    font-size: 15px;
     padding:7px;
     border:solid rgb(154, 199, 223) 1px;
     width:25%;
     background-color: #27dff3;
 }
 
+#display-area{
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    text-align: left;
+    min-height: 150px;
+    transition: all 0.3s; /* 色変化を滑らかに */
+}
+
+/* --- 🟢 REFRESH が選ばれた時 --- */
+
+.SelectMood.active-refresh {
+  background-color: #17ed2d; 
+  border-color: #1cefc4;
+  color: #fff;
+}
+#display-area.active-refresh {
+  background-color: #fff0f5; 
+  border-color: #ff69b4;
+  color: #333; /* 文字色もはっきり見えるように指定 */
+}
+
+/* --- 🟠 ENERGY が選ばれた時 --- */
+.SelectMood.active-energy {
+  background-color: #ec8d5e; 
+  border-color: #b7d429;
+  color: #fff;
+}
+#display-area.active-energy {
+  background-color: #edac8c; 
+  border-color: #ff9419;
+  color: #333;
+}
+
+/* --- 🔵 STUDY が選ばれた時 --- */
+.SelectMood.active-study {
+  background-color: #34495e; 
+  border-color: #34495e;
+  color: #fff;
+}
+#display-area.active-study {
+  background-color: #ecf0f1; 
+  border-color: #2c3e50;
+  color: #333;
+}
+
+/* --- 🟡 CHILL が選ばれた時 --- */
+.SelectMood.active-chill {
+  background-color: #f5deb3; 
+  border-color: #d2b48c;
+  color: #fff;
+}
+#display-area.active-chill {
+  background-color: #fff8dc; 
+  border-color: #d2b48c;
+  color: #333;
+}

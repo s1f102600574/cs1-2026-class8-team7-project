@@ -8,18 +8,18 @@
 </head>
 <body>
     <div id="header">
-        <div class="tabs">
+        <a href="index.html" class="tabs">
             <p>ホーム</p>
-        </div>
-        <div class="tabs">
-            <p>--の紹介</p>
-        </div>
-        <div class="tabs">
-            <p>__の紹介</p>
-        </div>
-        <div class="tabs">
-            <p>～～の紹介</p>
-        </div>
+        </a>
+        <a href="" class="tabs">
+            <p>s1f102602611の紹介</p>
+        </a>
+        <a href="s1f102600574.html" class="tabs">
+            <p>s1f102600574の紹介</p>
+        </a>
+        <a href="s1f102601272.html" class="tabs">
+            <p>s1f102601272の紹介</p>
+        </a>
     </div>
     
     <h1>セレクト</h1>
@@ -28,20 +28,19 @@
     <div class="intro">
         <p>今どんな気分？</p>
     </div>
-    <div id="mood">
-        <div class="SelectMood">
-            <p>refresh</p>
-        </div>
-        <div class="SelectMood">
-            <p>energy</p>
-        </div>
-        <div class="SelectMood">
-            <p>study</p>
-        </div>
-        <div class="SelectMood">
-            <p>chill</p>
-        </div>
-
+    <div id="mood" >
+        <button id="refresh-btn" class="SelectMood" onclick="displayMusicList('refresh')">refresh</button>
+        <button id="energy-btn" class="SelectMood" onclick="displayMusicList('energy')">energy</button>
+        <button id="study-btn" class="SelectMood" onclick="displayMusicList('study')">study</button>
+        <button id="chill-btn" class="SelectMood" onclick="displayMusicList('chill')">chill</button>
     </div>
+
+    <div id="display-area" class="text-area-box">
+        <p>選んだムード: </p>
+    </div>
+
+    <button id="reload-btn" onclick="retry()" >🔄 もう一度引く</button>
+
+    <script src=".\js\s1f10260261-lang.js"></script>
 </body>
 </html>
